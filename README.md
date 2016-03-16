@@ -3,6 +3,6 @@
 
 ![Sicp-cover] (https://github.com/jougene/sicp-on-racket/blob/master/sicp.jpeg)
 
-Solutions of exercises from the book "Structure and Interpretation of computer programs".
+Решения задачи из книги.
 
 
