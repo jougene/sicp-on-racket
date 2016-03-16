@@ -1,5 +1,7 @@
 #lang racket
 (require "ex-2-02.rkt")
+
+(provide (all-defined-out))
 ;
 ;construct two angles of rectangle
 ; left with top
@@ -31,8 +33,6 @@
 (define (height rectangle)
   (second-part (left-top rectangle)))
 
-
-
 (define (rectangle-perimeter rectangle)
   (* 2 (+ (segment-length (width rectangle))
           (segment-length (height rectangle)))))
@@ -40,7 +40,6 @@
 (define (rectangle-area rectangle)
   (* (segment-length (width rectangle))
      (segment-length (height rectangle))))
-
 
 
 

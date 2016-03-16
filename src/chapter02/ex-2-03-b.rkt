@@ -1,10 +1,12 @@
 #lang racket
 (require "ex-2-02.rkt")
+
+(provide (all-defined-out))
 ;
 ;construct two angles of rectangle
 ; left with top
 ; right with bottom
-(define (angle seg1 seg2)
+(define (parallel seg1 seg2)
   (cons seg1 seg2))
 
 (define (first-part angle)
@@ -15,21 +17,21 @@
 
 ;making rectangle of two parts
 (define (make-rectangle seg1 seg2 seg3 seg4)
-  (cons (angle seg1 seg2)
-        (angle seg3 seg4)))
+  (cons (parallel seg1 seg3)
+        (parallel seg2 seg4)))
 
-(define (left-top rectangle)
+(define (widths rectangle)
   (car rectangle))
 
-(define (right-bottom rectangle)
+(define (heights rectangle)
   (cdr rectangle))
 
 ; width and height
 (define (width rectangle)
-  (first-part (left-top rectangle)))
+  (first-part (widths rectangle)))
 
 (define (height rectangle)
-  (second-part (left-top rectangle)))
+  (first-part (heights rectangle)))
 
 
 
@@ -40,7 +42,6 @@
 (define (rectangle-area rectangle)
   (* (segment-length (width rectangle))
      (segment-length (height rectangle))))
-
 
 
 

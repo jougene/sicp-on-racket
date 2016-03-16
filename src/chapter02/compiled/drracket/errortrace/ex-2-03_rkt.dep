@@ -1,0 +1,1 @@
+("6.4" ("88b3a84e12152b8de0c1ff4d610156dd38930e63" . "f31419afb187238bd718521a8e4cebfb783d48bf") #"/home/eugene/Documents/programming/sicp-on-racket/src/chapter02/ex-2-02.rkt" (collects #"errortrace" #"errortrace-key.rkt") (collects #"racket" #"main.rkt") (collects #"racket" #"runtime-config.rkt"))
