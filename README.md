@@ -1,4 +1,6 @@
-## Структура и интерпретация компьютерных программ ![sicp-icon] (images/sicp-icon.png)
+
+
+## Структура и интерпретация компьютерных программ ![sicp-icon] (images/sicp-icon.png = 200x)
 [![Licence MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ##Решения задачи из книги.
