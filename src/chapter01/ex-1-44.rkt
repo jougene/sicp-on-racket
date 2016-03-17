@@ -10,8 +10,5 @@
                        (f x)
                        (f (+ x dx)))))
 
-(define (n-smooth f n)
-  (lambda (x)
-    (if (= n 0)
-        (f x)
-        (repeated (smooth f) (- n 1)))))
+(define (n-smooth f n )
+  ((repeated smooth n) f))
